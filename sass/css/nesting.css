@@ -1,0 +1,18 @@
+header {
+  background-color: skyblue;
+}
+header h1 {
+  font-style: italic;
+}
+
+header p,
+.paragraph p {
+  font-size: 24px;
+}
+
+.footer-header {
+  color: red;
+}
+.footer-paragraph p, .footer-main p {
+  color: blue;
+}/*# sourceMappingURL=nesting.css.map */

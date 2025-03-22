@@ -1,0 +1,8 @@
+@use "mixinn" as m;
+header {
+  @include m.inline-list();
+  li {
+    padding: 10px;
+    background-color: seagreen;
+  }
+}

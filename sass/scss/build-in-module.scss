@@ -1,0 +1,27 @@
+$warna-dasar: hsla(6, 93%, 71%, 0.9);
+$warna-tambahan: skyblue;
+h1 {
+  // ajustment-color
+  // color: adjust-color($color: $warna-dasar, $red: 200, $green: -100);
+
+  // adjustment-hue
+  // color: adjust-hue($color: $warna-dasar, $degrees: -150);
+
+  // complement
+  // color: complement($color: $warna-dasar);
+
+  // darken & lighten
+  // color: lighten($color: $warna-dasar, $amount: 50%);
+  // color: darken($color: $warna-dasar, $amount: 50%);
+
+  // saturate & desaturate
+  // color: saturate($color: $warna-dasar, $amount: 100%);
+  // color: desaturate($color: $warna-dasar, $amount: 20%);
+
+  // mix
+  // color: mix($warna-dasar, $warna-tambahan, 50%);
+
+  // fade in & out
+  // color: fade-in($color: $warna-dasar, $amount: 0.4);
+  color: fade-out($color: $warna-dasar, $amount: 0.4);
+}

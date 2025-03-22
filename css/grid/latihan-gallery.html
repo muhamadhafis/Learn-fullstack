@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        background-color: skyblue;
+      }
+
+      .container h1 {
+        text-align: center;
+        margin: 1rem;
+      }
+
+      .container img {
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+      }
+
+      .container ul {
+        width: 80%;
+        margin: 2rem auto;
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gallery</h1>
+      <ul>
+        <li><img src="/css/layout/image.jpg" alt="" /></li>
+        <li><img src="/css/layout/image.jpg" alt="" /></li>
+        <li><img src="/css/layout/image.jpg" alt="" /></li>
+        <li><img src="/css/layout/image.jpg" alt="" /></li>
+        <li><img src="/css/layout/image.jpg" alt="" /></li>
+        <li><img src="/css/layout/image.jpg" alt="" /></li>
+        <li><img src="/css/layout/image.jpg" alt="" /></li>
+        <li><img src="/css/layout/image.jpg" alt="" /></li>
+        <li><img src="/css/layout/image.jpg" alt="" /></li>
+        <li><img src="/css/layout/image.jpg" alt="" /></li>
+      </ul>
+    </div>
+  </body>
+</html>

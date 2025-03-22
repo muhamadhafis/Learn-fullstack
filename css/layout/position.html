@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 2000px;
+      }
+
+      /* raltive : box dua berada di layer 2 namun wilahanya TIDAK HILANG */
+      .relative {
+        width: 300px;
+        padding: 1rem;
+        border: 1px solid black;
+      }
+      .relative .satu {
+        width: 100px;
+        height: 100px;
+        background-color: lightgreen;
+      }
+      .relative .dua {
+        width: 100px;
+        height: 100px;
+        background-color: lightskyblue;
+        position: relative;
+        top: 20px;
+        left: 30px;
+      }
+      .relative .tiga {
+        width: 100px;
+        height: 100px;
+        background-color: lightcoral;
+      }
+
+      /* absolute : box dua berada di layer 2 namun wilahanya HILANG */
+      .absolute {
+        width: 300px;
+        padding: 1rem;
+        border: 1px solid black;
+        position: relative;
+      }
+      .absolute .satu {
+        width: 100px;
+        height: 100px;
+        background-color: lightgreen;
+      }
+      .absolute .dua {
+        width: 100px;
+        height: 100px;
+        background-color: violet;
+        position: absolute;
+        top: 1rem;
+        left: 3rem;
+      }
+      .absolute .tiga {
+        width: 100px;
+        height: 100px;
+        background-color: lightcoral;
+      }
+
+      /* fixed : box dua berada di layer 2 namun wilahanya HILANG */
+      .fixed .satu {
+        width: 300px;
+        height: 5rem;
+        position: absolute;
+        background-color: orange;
+        top: 0;
+        right: 0;
+      }
+      .fixed .tiga {
+        width: 100px;
+        height: 100px;
+        background-color: lightcoral;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="relative">
+      relative
+      <div class="satu"></div>
+      <div class="dua"></div>
+      <div class="tiga"></div>
+    </div>
+
+    <div class="absolute">
+      absolute
+      <div class="satu"></div>
+      <div class="dua"></div>
+      <div class="tiga"></div>
+    </div>
+
+    <div class="fixed">
+      <div class="satu">fixed</div>
+      <div class="tiga"></div>
+    </div>
+  </body>
+</html>

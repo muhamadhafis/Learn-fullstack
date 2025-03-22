@@ -1,0 +1,150 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  padding-bottom: 2000px;
+  background-color: #eee;
+}
+/* 1 */
+.container-satu {
+  width: 800px;
+  background-color: #fff;
+  margin: 3rem auto;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.kolom-utama {
+  order: 2;
+  flex: 4;
+}
+
+.sidebar-satu {
+  order: 1;
+  flex: 1;
+}
+
+.sidebar-dua {
+  order: 3;
+  flex: 2;
+}
+
+/* 2 */
+.container-dua {
+  max-width: 800px;
+  margin: 3rem auto;
+}
+
+.layanan {
+  padding: 1rem;
+  box-sizing: border-box;
+  margin: 0.5rem;
+}
+
+.layanan.satu {
+  background-color: lightsalmon;
+}
+.layanan.dua {
+  background-color: lightblue;
+}
+.layanan.tiga {
+  background-color: lightgreen;
+}
+
+/* 3 */
+.container-tiga {
+  width: 800px;
+  margin: 3rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.thumbnail {
+  width: 33%;
+  padding: 0.5rem;
+}
+
+.thumbnail img {
+  width: 100%;
+}
+
+/* 4 */
+.container-empat {
+  width: 800px;
+  margin: 3rem auto;
+  display: flex;
+}
+
+.card {
+  border: 1px solid #999;
+  border-radius: 10px;
+  background-color: #eee;
+  overflow: hidden;
+  margin: 1rem;
+  flex: 1;
+}
+
+.header {
+  height: 150px;
+  background-color: #666;
+}
+
+.card .content {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.card .content p {
+  padding: 1rem;
+}
+
+.card.besar {
+  transform: scale(1.12);
+}
+
+/* 5 */
+.container-lima {
+  width: 500px;
+  height: 500px;
+  border: 5px solid black;
+  margin: 3rem auto;
+  display: flex;
+}
+
+.kotak {
+  width: 200px;
+  height: 200px;
+  background-color: darkred;
+  color: white;
+  margin: auto;
+  display: flex;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.kotak span {
+  margin: auto;
+}
+
+/* reponsive */
+@media (min-width: 850px) {
+  .container-dua {
+    display: flex;
+  }
+
+  .layanan {
+    width: 100%;
+  }
+
+  .thumbnail {
+    width: 25%;
+  }
+}

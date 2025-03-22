@@ -1,0 +1,21 @@
+// single data variable
+$alert-succses: green;
+$alert-warning: yellow;
+
+// multi data variable
+$alert: (
+  "succses": green,
+  "warning": yellow,
+  "danger": red,
+);
+
+header {
+  $alert-danger: red !global;
+  h1 {
+    color: $alert-danger;
+  }
+}
+
+p {
+  color: map-get($map: $alert, $key: succses);
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      html{
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background-color: lightgray;
+        font: 16px/28px sans-serif;
+      }
+
+      .cf:before,
+      .cf:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+      }
+
+      .cf:after {
+        clear: both;
+      }
+
+      .container {
+        width: 960px;
+        margin: 80px auto;
+        background-color: white;
+        color: darkslategray;
+      }
+
+      .top-news{
+        position: fixed;
+        height: 30px;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: violet;
+        z-index: 5;
+      }
+
+      .link-x{
+        position: relative;
+      }
+
+      .x{
+        position: absolute;
+        background-image: url(https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg);
+        background-repeat: no-repeat;
+        background-size: 3rem;
+        width: 3rem;
+        height: 3rem;
+        align-items: center;
+        border-radius: 0.5rem;
+        top: 2.7rem;
+        left: 55rem;
+      }
+
+      header {
+        padding: 20px;
+      }
+
+      header h1 {
+        font-size: 48px;
+        font-weight: bold;
+      }
+
+      header ul li {
+        display: inline-block;
+        margin-top: 20px;
+        margin-right: 10px;
+      }
+
+      header ul li a {
+        color: salmon;
+        text-decoration: none;
+        padding: 8px;
+      }
+
+      header ul li a:hover {
+        color: white;
+        background-color: salmon;
+      }
+
+      article{
+        box-sizing: border-box;
+        padding: 1rem;
+      }
+
+      article .hero {
+        height: 250px;
+        background-image: url(image.jpg);
+        background-size: cover;
+        background-position: 0 -50px;
+        margin-bottom: 20px;
+        border-top: 5px solid lightcoral;
+        border-bottom: 5px solid lightseagreen;
+      }
+
+      article main {
+        width: 600px;
+        box-sizing: border-box;
+        float: left;
+      }
+
+      article aside {
+        width: 300px;
+        float: right;
+      }
+
+      main .penulis{
+        font-size: 12px;
+      }
+
+      main .value-article {
+        margin-top: 1rem;
+      }
+
+      aside .photo{
+        width: 80px;
+        height: 80px;
+        background: url(image.jpg);
+        background-size: cover;
+        background-position: 50% 0;
+        float: left;
+        margin-right: 10px;
+      }
+
+      aside p {
+        font: 12px/18px sans-serif;
+      }
+      footer{
+        background-color: darkslateblue;
+        padding: 10px;
+      }
+      
+      footer p {
+        color: white;
+        text-align: center;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-news"></div>
+      <div class="link-x">
+        <a href="https://x.com" class="x"></a>
+      </div>
+      <header>
+        <h1>My Website</h1>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+
+        <article class="cf">
+          <div class="hero"></div>
+          <main>
+            <h2>Judul</h2>
+            <p class="penulis">
+              Ditulis oleh <a href="#">Hafis</a> pada 16 Maret 2025
+            </p>
+            <div class="value-article">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum dolor in neque delectus iste. Eveniet ipsa iusto consequatur assumenda obcaecati neque, quas, accusamus eum, optio ea ducimus corrupti vel omnis. Est voluptatum eveniet tempore earum, praesentium maiores suscipit tenetur. Voluptas voluptatem sequi ratione nisi aliquam, itaque, tenetur reiciendis facere adipisci eligendi modi quos ullam fugit soluta impedit iure quis iusto aut accusamus alias illum aperiam excepturi rem dolor. Reprehenderit ex provident reiciendis possimus sit quisquam impedit. Similique et voluptatibus, impedit accusantium quibusdam laboriosam ipsum esse tempora, est quasi vero saepe omnis animi eum maxime nobis! Qui dolor suscipit necessitatibus laborum.
+              </p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam a
+                aut eligendi, ipsum praesentium voluptas fugiat autem, voluptates
+                nulla quaerat similique nisi. Repellendus iusto officia eum.
+                Reprehenderit exercitationem impedit laborum!
+              </div>
+            </p>
+          </main>
+          <aside>
+            <h3>Tentang profil</h3>
+            <div class="photo"></div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia voluptatum eveniet ab quaerat neque, alias ea, earum perferendis, eius corrupti ipsam adipisci quos. Totam, eaque. Corporis porro quia tempore est.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatibus laborum optio quibusdam dolorem ullam impedit modi at ad iure, a neque dolor aspernatur doloribus. Ducimus quibusdam quisquam dignissimos iure.</p>
+          </aside>
+        </article>
+
+      <footer>
+        <p>Copyright 2025 hafis</p>
+      </footer>
+    </div>
+  </body>
+</html>

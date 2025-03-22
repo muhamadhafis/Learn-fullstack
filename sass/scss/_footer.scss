@@ -1,0 +1,8 @@
+@use "mixinn" as m;
+footer {
+  @include m.inline-list();
+  li {
+    padding: 5px;
+    background-color: red;
+  }
+}

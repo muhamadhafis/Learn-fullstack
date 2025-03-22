@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .cf:before,
+      .cf:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+      }
+
+      .cf:after {
+        clear: both;
+      }
+
+      .container1 {
+        width: 600px;
+        border: 1px solid black;
+        padding: 10px;
+        margin: auto;
+      }
+
+      .container1 img {
+        width: 300px;
+        float: left;
+      }
+
+      .container1 .clear {
+        clear: left;
+      }
+
+      .container2 {
+        margin: 1rem auto;
+        width: 400px;
+        border: 1px solid black;
+        padding: 10px;
+      }
+
+      .container2 .kotak {
+        float: left;
+        width: 50px;
+        height: 50px;
+        background-color: skyblue;
+        color: white;
+        line-height: 50px;
+        text-align: center;
+        margin: 5px;
+      }
+
+      .container2 .clear {
+        clear: left;
+      }
+
+      .container3 {
+        margin: 8rem auto 0;
+        width: 800px;
+        border: 1px solid black;
+        padding: 1rem;
+      }
+
+      .container3 .kiri {
+        width: 150px;
+        height: 100px;
+        background-color: lightblue;
+        float: left;
+      }
+
+      .container3 .tengah {
+        width: 500px;
+        height: 100px;
+        background-color: lightgreen;
+        float: left;
+        border: 10px dotted seagreen;
+        box-sizing: border-box;
+      }
+
+      .container3 .kanan {
+        width: 150px;
+        height: 100px;
+        background-color: lightcoral;
+        float: right;
+      }
+
+      .container3 .clear {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container1 cf">
+      <img src="image.jpg" alt="" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
+        reiciendis nesciunt consequuntur provident unde modi quae dolor,
+        excepturi quasi laudantium ipsum possimus labore, doloribus vero
+        voluptatibus dicta in? Eos laboriosam ad amet deserunt laudantium
+        ducimus quaerat earum. Vitae animi velit, delectus esse, incidunt iure
+        ullam minima illum iste beatae doloremque. Rerum dolores id aliquam enim
+        eum autem, asperiores adipisci blanditiis culpa voluptatibus doloribus
+        nesciunt error assumenda animi perspiciatis, distinctio odit laudantium
+        deleniti. Ullam amet architecto aliquid ab tempore optio est explicabo
+        ex! Fugit rem atque sint aliquid aperiam temporibus harum totam beatae
+        iste, facilis dolore enim, possimus deserunt! Ex, cumque!
+      </p>
+
+      <!-- <div class="clear"></div> -->
+    </div>
+
+    <div class="container2 cf">
+      <div class="kotak">1</div>
+      <div class="kotak">2</div>
+      <div class="kotak">3</div>
+      <div class="kotak">4</div>
+      <div class="kotak">5</div>
+      <div class="kotak">6</div>
+      <div class="kotak">7</div>
+      <div class="kotak">8</div>
+      <div class="kotak">9</div>
+      <div class="kotak">10</div>
+
+      <!-- <div class="clear"></div> -->
+
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur sunt
+        aliquam commodi non pariatur possimus placeat! Eius libero deserunt
+        similique maxime veniam non earum ab consectetur ducimus nisi.
+        Laboriosam, cum!
+      </p>
+    </div>
+
+    <div class="container3 cf">
+      <div class="kiri"></div>
+      <div class="tengah"></div>
+      <div class="kanan"></div>
+
+      <!-- <div class="clear"></div> -->
+    </div>
+  </body>
+</html>
