@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Hover, focus, active</title>
+  </head>
+  <body>
+    <section class="flex max-w-xl h-20 bg-blue-200 mx-auto mb-4">
+      <button
+        class="block m-auto bg-blue-500 w-24 h-10 font-semibold text-white rounded-md hover:bg-blue-600 active:bg-blue-700 focus:bg-red-700"
+      >
+        Anomaly
+      </button>
+    </section>
+
+    <section
+      class="max-w-lg mx-auto mb-4 p-4 shadow-md rounded-xl hover:bg-blue-500 group font-serif"
+    >
+      <h1 class="text-xl font-bold mb-6 text-slate-950 group-hover:text-white">
+        Judul panjang
+      </h1>
+      <p
+        class="text-slate-600 group-hover:text-white selection:bg-lime-600 selection:text-white first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-4"
+      >
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic est
+        laborum earum et nobis officia aperiam fugiat veniam sequi quam
+        consectetur voluptates rerum ad quo, odit, reiciendis asperiores error?
+        Consectetur ipsa architecto minus non praesentium ratione quo totam
+        tenetur necessitatibus!
+      </p>
+    </section>
+
+    <section class="max-w-xl shadow-md mx-auto p-5 rounded-lg">
+      <form action="">
+        <label for="email">
+          <span
+            class="block mb-4 text-slate-900 font-semibold after:content-['*'] after:text-pink-500 after:ml-1"
+            >Email</span
+          >
+          <input
+            class="block w-full border border-slate-300 rounded shadow px-3 py-2 text-sm outline-none invalid:ring-1 invalid:ring-pink-500 peer"
+            placeholder="Masukan email"
+            type="email"
+            id="email"
+          />
+          <p
+            class="text-pink-500 text-sm mt-2 text-right invisible peer-invalid:visible"
+          >
+            Format email tidak valid.
+          </p>
+        </label>
+      </form>
+    </section>
+  </body>
+</html>
