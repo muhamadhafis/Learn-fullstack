@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      * {
+        /* border: 1px solid red; */
+      }
+    </style>
+    <title>Background, border, rounding, shadow, effect & filter</title>
+  </head>
+  <body>
+    <!-- <section class="mb-16 bg-blue-400">
+      <h1 class="font-bold text-center py-4">Spacing</h1>
+      <h1 class="m-4 bg-blue-500">Margin</h1>
+      <h1 class="p-4 bg-blue-500">Padding</h1>
+    </section>
+
+    <section class="mb-16 bg-orange-300">
+      <h1 class="font-bold text-center py-4">Sizing</h1>
+      <div class="w-1/2 h-16 bg-orange-400">Box1</div>
+      <div class="w-3/4 min-h-14 bg-orange-400">Box 2</div>
+    </section>
+
+    <section class="max-w-xl mx-auto">
+      <h1 class="text-4xl font-bold mb-3">
+        Belajar typography dengan
+        <span
+          class="bg-gradient-to-r from-blue-500 to-blue-200 bg-clip-text text-transparent italic"
+          >Tailwind</span
+        >
+      </h1>
+      <div class="text-lg mb-3">
+        By <span class="text-blue-900 font-bold">Hafis</span> 2024
+      </div>
+      <p
+        class="mb-3 p-4 rounded-2xl bg-gradient-to-br from-yellow-100 via-red-400 to-orange-400"
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+        voluptate, doloribus iste quam dignissimos blanditiis laboriosam
+        exercitationem culpa nesciunt
+        <a href="" class="underline font-semibold">impedit</a> aliquam, sunt
+        earum ratione possimus odit accusamus minima eum esse dolore
+        perspiciatis ad! Explicabo
+        <a href="" class="underline font-semibold">culpa</a> amet ea qui, eius
+        debitis magnam nihil
+        <a href="" class="underline font-semibold">excepturi fugiat</a> aut
+        ipsum! Laborum officiis voluptates dicta!
+      </p>
+      <p class="mb-3 italic text-lg font-light">
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+        distinctio!"
+      </p>
+      <p class="mb-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ea
+        rem nisi doloribus commodi nulla.
+      </p>
+    </section> -->
+
+    <section
+      class="max-w-lg h-96 bg-slate-400 mx-auto overflow-y-scroll bg-scroll mb-16"
+      style="
+        background-image: url(https://marvel-b1-cdn.bc0a.com/f00000000290162/images.ctfassets.net/2htm8llflwdx/1LEJIT9KGRC4nwTJ5vuS6H/a912e31c468fd32986f2818816135cc4/OnlineLearning_SouthAsia_Learning_Indoor_GettyImages-1071652068.jpg?fit=thumb);
+      "
+    >
+      <h1 class="text-white text-center bg-red-700 p-4">Background</h1>
+      <p class="p-4 text-xl text-orange-600">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta adipisci
+        modi consectetur repudiandae autem unde reprehenderit doloribus cum
+        laboriosam voluptates. Minima magnam obcaecati ut dolores, error eveniet
+        libero quos, perspiciatis, consectetur impedit corporis quae atque eos
+        asperiores! Repudiandae nemo neque veniam architecto enim, qui molestias
+        alias! Eos maiores earum quia vitae quos quidem, id fugit incidunt iure
+        omnis nesciunt, nobis perferendis provident accusamus, sit quaerat vero
+        laudantium! Odit possimus explicabo, nisi cupiditate veniam unde est hic
+        eveniet quisquam quaerat nesciunt delectus doloribus error tempore
+        laboriosam consequuntur soluta magnam inventore ad! Quaerat totam iure
+        repellat aut dolore facere id commodi? Quidem voluptates dolore
+        accusamus ratione magnam ad non, in eligendi nulla iste nisi minus
+        voluptatem officiis. Soluta, obcaecati. Accusantium officiis rem
+        architecto eius vitae! Totam sint molestias reiciendis illum magni
+        praesentium nulla assumenda reprehenderit, laboriosam iste aspernatur
+        neque veniam pariatur excepturi ea laborum odio minus ab suscipit,
+        dignissimos necessitatibus, dolores ipsum non? Nobis at minima
+        provident, sunt nemo laborum ut cumque libero, eum voluptatibus dolorem
+        id laboriosam quasi quibusdam sint ipsum culpa, illum necessitatibus
+        ratione cupiditate ad. Sed illo repellendus est repudiandae quos
+        exercitationem id cupiditate culpa distinctio beatae quod cumque
+        architecto, voluptatum ducimus deserunt ipsum ratione in, impedit ipsa
+        porro.
+      </p>
+    </section>
+
+    <section
+      class="mb-16 max-w-sm h-52 bg-pink-400 bg-contain bg-no-repeat bg-center mx-auto rounded-tl-3xl rounded-br-3xl overflow-hidden"
+      style="background-image: url(./img/1.jpg)"
+    >
+      <h1 class="text-white text-center bg-red-700 p-4">Rounded</h1>
+    </section>
+
+    <section
+      class="mb-16 max-w-sm mx-auto h-48 bg-green-400 shadow-lg shadow-green-900/50 drop-shadow-lg rounded-2xl overflow-hidden"
+    >
+      <h1 class="text-white text-center bg-red-700 p-4">Shadow</h1>
+    </section>
+
+    <section
+      class="mb-16 max-w-sm mx-auto h-48 bg-green-400 rounded-2xl overflow-hidden"
+    >
+      <div class="box flex gap-4 justify-center text-center">
+        <div
+          class="box1 bg-purple-600 text-white w-28 h-8 font-bold opacity-100"
+        >
+          Opacity 100
+        </div>
+        <div
+          class="box1 bg-purple-600 text-white w-28 h-8 font-bold opacity-70"
+        >
+          Opacity 70
+        </div>
+        <div
+          class="box2 bg-purple-600 text-white w-28 h-8 font-bold opacity-40"
+        >
+          Opacity 40
+        </div>
+      </div>
+    </section>
+
+    <div class="div">
+      <h1 class="text-white text-center bg-red-700 p-4">Blending & filter</h1>
+      <section
+        class="mb-16 max-w-sm h-52 bg-blue-700 bg-contain bg-no-repeat bg-center mx-auto rounded-tl-3xl rounded-br-3xl overflow-hidden bg-blend-multiply bg-[url(/img/1.jpg)] blur-[2px]"
+      ></section>
+    </div>
+
+    <section
+      class="w-90 h-90 bg-red-700 mx-auto flex bg-[url(/img/1.jpg)] bg-cover"
+    >
+      <div
+        class="w-45 h-45 bg-white/10 backdrop-blur-sm m-auto text-white text-center"
+      >
+        BLLURR
+      </div>
+    </section>
+  </body>
+</html>
