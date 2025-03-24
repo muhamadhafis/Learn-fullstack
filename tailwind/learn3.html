@@ -5,8 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Hover, focus, active</title>
+    <style type="text/tailwindcss">
+      #toggle:checked ~ label div.toggle-circle {
+        @apply translate-x-4;
+      }
+    </style>
+
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
   </head>
-  <body>
+  <body class="dark:bg-slate-900">
+    <section class="text-slate-900 flex justify-center m-8 text-sm">
+      <span class="mr-2">Light</span>
+      <input type="checkbox" id="toggle" class="hidden" />
+      <label for="toggle">
+        <div
+          class="w-10 h-5 bg-slate-500 rounded-full flex items-center p-1 cursor-pointer"
+        >
+          <div class="w-4 h-4 bg-white rounded-full toggle-circle"></div>
+        </div>
+      </label>
+      <span class="ml-2">Dark</span>
+    </section>
+
     <section class="flex max-w-xl h-20 bg-blue-200 mx-auto mb-4">
       <button
         class="block m-auto bg-blue-500 w-24 h-10 font-semibold text-white rounded-md hover:bg-blue-600 active:bg-blue-700 focus:bg-red-700"
@@ -16,13 +40,15 @@
     </section>
 
     <section
-      class="max-w-lg mx-auto mb-4 p-4 shadow-md rounded-xl hover:bg-blue-500 group font-serif"
+      class="max-w-lg mx-auto mb-4 px-8 py-4 shadow-md rounded-xl hover:bg-blue-500 group font-serif dark:bg-slate-800"
     >
-      <h1 class="text-xl font-bold mb-6 text-slate-950 group-hover:text-white">
+      <h1
+        class="text-xl font-bold mb-6 text-slate-950 group-hover:text-white dark:text-white"
+      >
         Judul panjang
       </h1>
       <p
-        class="text-slate-600 group-hover:text-white selection:bg-lime-600 selection:text-white first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-4"
+        class="text-slate-600 group-hover:text-white selection:bg-lime-600 selection:text-white first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-4 dark:text-white"
       >
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic est
         laborum earum et nobis officia aperiam fugiat veniam sequi quam
@@ -32,15 +58,17 @@
       </p>
     </section>
 
-    <section class="max-w-xl shadow-md mx-auto p-5 rounded-lg">
+    <section
+      class="max-w-xl shadow-md mx-auto p-5 rounded-lg dark:border dark:border-slate-500"
+    >
       <form action="">
         <label for="email">
           <span
-            class="block mb-4 text-slate-900 font-semibold after:content-['*'] after:text-pink-500 after:ml-1"
+            class="block mb-4 text-slate-900 font-semibold after:content-['*'] after:text-pink-500 after:ml-1 dark:text-white"
             >Email</span
           >
           <input
-            class="block w-full border border-slate-300 rounded shadow px-3 py-2 text-sm outline-none focus:ring focus: ring-blue-500 invalid:ring-1 invalid:ring-pink-500 peer"
+            class="block w-full border border-slate-500 rounded shadow px-3 py-2 text-sm outline-none focus:border focus:border-blue-500 invalid:border invalid:border-pink-500 peer dark:text-white"
             placeholder="Masukan email"
             type="email"
             id="email"
@@ -53,5 +81,16 @@
         </label>
       </form>
     </section>
+
+    <script>
+      const checkbox = document.querySelector("#toggle");
+      const html = document.querySelector("html");
+
+      checkbox.addEventListener("click", function () {
+        checkbox.checked
+          ? html.classList.add("light")
+          : html.classList.remove("light");
+      });
+    </script>
   </body>
 </html>
